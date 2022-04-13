@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">AMITGAME</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -16,7 +16,7 @@ const Navbar = () => {
       <li class="nav-item active">
       <Link to="home" class="nav-link">Home</Link>       </li>
       <li class="nav-item">    
-        <Link to="app" class="nav-link">Memort Game</Link>  
+        <Link to="app" class="nav-link">Memory Game</Link>  
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Pricing</a>

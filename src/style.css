@@ -1,0 +1,22 @@
+.w-100 {
+  width: 100% !important;
+  height: 30%;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 250px;
+}
+.carousel {
+  margin-bottom: 2%;
+}
+.container {
+  margin-bottom: 2%;
+}
+.card-img-top1 {
+  height: 382px;
+  width: 95%;
+  cursor: pointer !important;
+}

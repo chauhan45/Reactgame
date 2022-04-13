@@ -3,7 +3,7 @@ import GameBoard from "./components/GameBoard";
 import NewGame from "./components/NewGame";
 import PlayAgain from './components/PlayAgain';
 import Navbar from "./Screen/Navbar";
-
+import './style.css'
 class App extends Component {
 
 

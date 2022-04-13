@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import memory from '../img/memory.png'
 export class NewGame extends Component {
 
   state = {
@@ -21,6 +21,9 @@ export class NewGame extends Component {
           style={{ visibility: visible ? "visible" : "hidden" }}>
           Play
         </button>
+        <div onClick={this.handleClick} style={{ visibility: visible ? "visible" : "hidden" }}>
+        <img class="card-img-top1" src={memory} alt="Card image cap" />
+        </div>
       </div >
     );
   }
