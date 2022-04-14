@@ -1,7 +1,8 @@
 import React from 'react';
 // import {Link, Button, Nav, NavDropdown, MenuItem, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+// import Titakapp from '../src/Tiktakapp'
+import Titakapp from '../Tiktakapp'
 const Navbar = () => {
   return (
     <>
@@ -14,12 +15,12 @@ const Navbar = () => {
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-      <Link to="home" class="nav-link">Home</Link>       </li>
+      <Link to="home" class="nav-link">Tik-tak game</Link>       </li>
       <li class="nav-item">    
         <Link to="app" class="nav-link">Memory Game</Link>  
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <Link to="Titakapp" class="nav-link"> </Link>  
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
