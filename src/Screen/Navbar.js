@@ -2,12 +2,14 @@ import React from 'react';
 // import {Link, Button, Nav, NavDropdown, MenuItem, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 // import Titakapp from '../src/Tiktakapp'
-import Titakapp from '../Tiktakapp'
+import Titakapp from '../Tiktakapp';
+import './main.css'
+
 const Navbar = () => {
   return (
     <>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    {/* <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">AMITGAME</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -27,8 +29,50 @@ const Navbar = () => {
       </li>
     </ul>
   </div>
-</nav>
+</nav> */}
     
+
+    <header>
+        <div class="flex">
+          <div class="logo">
+            <a href="#">
+              <img
+                src="https://onclickwebdesign.com/wp-content/uploads/game_warrior_logo.png"
+                alt="Game Warrior Logo"
+              />
+            </a>
+          </div>
+          <nav>
+            <button id="nav-toggle" class="hamburger-menu">
+              <span class="strip"></span>
+              <span class="strip"></span>
+              <span class="strip"></span>
+            </button>
+            <ul id="nav-menu-container">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+              <Link to="home" class="nav-link">Tik-tak game</Link>  
+              </li>
+              <li>
+              <Link to="app" class="nav-link">Memory Game</Link>  
+              </li>
+              <li>
+                <a href="#">Forums</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" id="login-register-button">
+            Login / Register
+          </a>
+        </div>
+      </header>
+
+
     </>
   )
 }

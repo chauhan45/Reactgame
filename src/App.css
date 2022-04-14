@@ -38,6 +38,7 @@
   font-size: 14px;
   font-weight: bold;
   padding: 20px;
+  justify-content: center;
 }
 
 .menu > a {
