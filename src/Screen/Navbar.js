@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 // import {Link, Button, Nav, NavDropdown, MenuItem, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 // import Titakapp from '../src/Tiktakapp'
@@ -6,6 +6,14 @@ import Titakapp from '../Tiktakapp';
 import './main.css'
 
 const Navbar = () => {
+
+useEffect(() => {
+  document.getElementById('nav-toggle').addEventListener('click', function () {
+    let navMenu = document.getElementById('nav-menu-container');
+    navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+});
+});
+
   return (
     <>
     
@@ -33,6 +41,7 @@ const Navbar = () => {
     
 
     <header>
+      
         <div class="flex">
           <div class="logo">
             <a href="#">

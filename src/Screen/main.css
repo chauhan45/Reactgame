@@ -249,21 +249,25 @@ nav ul li a:hover {
 #game-types-boxes .box.new {
     background: url('https://onclickwebdesign.com/wp-content/uploads/wow_lady.jpg') top center no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 #game-types-boxes .box.strategy {
     background: url('https://onclickwebdesign.com/wp-content/uploads/robotic_ninja.jpg') top center no-repeat;
     background-size: cover;
+     cursor: pointer;
 }
 
 #game-types-boxes .box.rpg {
     background: url('https://onclickwebdesign.com/wp-content/uploads/jeep_armed.jpg') top center no-repeat;
     background-size: cover;
+     cursor: pointer;
 }
 
 #game-types-boxes .box.racing {
     background: url('https://onclickwebdesign.com/wp-content/uploads/sports_car.jpg') top center no-repeat;
     background-size: cover;
+     cursor: pointer;
 }
 
 #game-types-boxes .box .badge {

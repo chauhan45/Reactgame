@@ -47,7 +47,7 @@ export const Main = () => {
           <div class="flex">
             <div class="box new">
               <div class="shade"></div>
-              <span class="badge new">New</span>
+              <span class="badge new">Comming Soon</span>
               <div class="contents">
                 <h4>Suspendisse ut justo tem por, rutrum</h4>
                 <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
@@ -59,7 +59,7 @@ export const Main = () => {
 
             <div class="box strategy">
               <div class="shade"></div>
-              <span class="badge strategy">New</span>
+              <span class="badge strategy">Comming Soon</span>
               <div class="contents">
                 <h4>Suspendisse ut justo tem por, rutrum</h4>
                 <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
@@ -71,7 +71,7 @@ export const Main = () => {
 
             <div class="box rpg">
               <div class="shade"></div>
-              <span class="badge rpg">New</span>
+              <span class="badge rpg">Comming Soon</span>
               <div class="contents">
                 <h4>Suspendisse ut justo tem por, rutrum</h4>
                 <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
@@ -83,7 +83,7 @@ export const Main = () => {
 
             <div class="box racing">
               <div class="shade"></div>
-              <span class="badge racing">New</span>
+              <span class="badge racing">Comming Soon</span>
               <div class="contents">
                 <h4>Suspendisse ut justo tem por, rutrum</h4>
                 <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
