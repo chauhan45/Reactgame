@@ -34,10 +34,11 @@ export const Main = () => {
             <div id="latest-news-container">
               <div class="latest-news-item">
                 <span class="badge new">New</span>
-                <span class="latest-news-text">
-                  Lorem ipsum dolor sit amet, consectectur adipiscing elit
+                <marquee class="latest-news-text">
+                Comming Soon  Lorem ipsum dolor sit amet, consectectur adipiscing elit
                   ipsum.
-                </span>
+                </marquee>
+                
               </div>
             </div>
           </div>
