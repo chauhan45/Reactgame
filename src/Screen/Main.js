@@ -373,7 +373,7 @@ export const Main = () => {
       <footer>
         <div class="flex">
           <small>
-            Copyright &copy; 2022 All rights reserved  | This template is made
+            Copyright &copy; 2022 All rights reserved  | This Website is made
             with <span class="footer-heart">&#9829;</span> by{" "}
             <a href="https://truintenttechnologies.com/" target="_blank">
             truintenttechnologies

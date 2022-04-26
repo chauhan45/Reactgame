@@ -69,6 +69,11 @@
   }
 }
 
+#recent-reviews h1 {
+
+  color: white;
+}
+
 /* .memoryCard {
   width: 133px !important;
 } */
