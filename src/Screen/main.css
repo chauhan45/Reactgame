@@ -897,3 +897,24 @@ footer ul li a {
     /* margin-top: 20px !important; */
   }
 }
+
+@media (max-width: 400px){
+#login-register-button {
+
+    height: 34px !important;
+    width: 121px !important;
+}
+}
+@media (max-width: 767px){
+    #login-register-button {
+        height: 34px !important;
+        width: 134px !important;
+    }
+}
+@media (max-width: 767px){
+    .logotext {
+        color: #eee;
+        font-size: 15px;
+        text-decoration: none;
+    }
+}
