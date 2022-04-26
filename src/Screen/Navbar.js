@@ -62,7 +62,7 @@ useEffect(() => {
                 <a href="#">Home</a>
               </li>
               <li>
-              <Link to="home" class="nav-link">Tik-tak game</Link>  
+              <Link to="home" class="nav-link">Tik-Tac-ToE </Link>  
               </li>
               <li>
               <Link to="app" class="nav-link">Memory Game</Link>  

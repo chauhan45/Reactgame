@@ -4,7 +4,7 @@ import Ludo from "../img/ludo.jpeg";
 import memory from "../img/memory.png";
 import { Link } from "react-router-dom";
 import tikatkimage from "../img/tiktak.jpeg";
-import './main.css'
+import "./main.css";
 
 export const Main = () => {
   const imageClick = () => {
@@ -20,9 +20,12 @@ export const Main = () => {
               The Best <span>Games</span> Out There
             </h1>
             <h5>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              malesuada lorem maximus mauris scelerisque, at rutrum nulla
-              dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.{" "}
+              The Warriors is a 2005 beat 'em up video game based on the 1979
+              film of the same name (itself based on Sol Yurick's 1965 novel),
+              developed by Rockstar Toronto and published by Rockstar Games. It
+              was released in October 2005 for the PlayStation 2 and Xbox, and
+              February 2007 for the PlayStation Portable; the PSP port was
+              developed by Rockstar Leeds.{" "}
             </h5>
             <button>Read More</button>
           </div>
@@ -35,10 +38,9 @@ export const Main = () => {
               <div class="latest-news-item">
                 <span class="badge new">New</span>
                 <marquee class="latest-news-text">
-                Comming Soon  Lorem ipsum dolor sit amet, consectectur adipiscing elit
-                  ipsum.
+                  Comming Soon Lorem ipsum dolor sit amet, consectectur
+                  adipiscing elit ipsum.
                 </marquee>
-                
               </div>
             </div>
           </div>

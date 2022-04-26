@@ -69,6 +69,9 @@
   }
 }
 
+/* .memoryCard {
+  width: 133px !important;
+} */
 @media only screen and (max-width: 600px) {
   .memoryCard {
     height: 56px;
@@ -76,4 +79,10 @@
     border: 1.5px solid transparent;
     transition: all .3s ease-in;
 }
+
+.board-container {
+  width:85%
+}
+
+
 }
