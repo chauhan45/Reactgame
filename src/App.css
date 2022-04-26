@@ -88,3 +88,7 @@
 .logo{
   padding: 10px;
 }
+.nav-link {
+  display: block;
+  padding: 0px !important;
+}
