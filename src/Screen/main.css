@@ -151,7 +151,7 @@ nav ul li a:hover {
   background-color: #ffb320;
   color: #131313;
   border-radius: 20px;
-  padding: 10px 15px;
+  padding: 16px 13px;
   font-size: 0.85em;
   font-weight: 600;
 }
@@ -878,6 +878,9 @@ footer ul li a {
   font-weight: 900;
   text-decoration: none !important;
 }
+.logotext:hover {
+  color: #ffb320 !important;
+}
 .logo img {
   width: 38px;
   margin-top: -9px;
@@ -898,23 +901,22 @@ footer ul li a {
   }
 }
 
-@media (max-width: 400px){
-#login-register-button {
-
+@media (max-width: 400px) {
+  #login-register-button {
     height: 34px !important;
     width: 121px !important;
+  }
 }
+@media (max-width: 767px) {
+  #login-register-button {
+    height: 34px !important;
+    width: 134px !important;
+  }
 }
-@media (max-width: 767px){
-    #login-register-button {
-        height: 34px !important;
-        width: 134px !important;
-    }
-}
-@media (max-width: 767px){
-    .logotext {
-        color: #eee;
-        font-size: 15px;
-        text-decoration: none;
-    }
+@media (max-width: 767px) {
+  .logotext {
+    color: #eee;
+    font-size: 15px;
+    text-decoration: none;
+  }
 }
