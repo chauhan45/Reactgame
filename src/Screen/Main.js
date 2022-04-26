@@ -5,6 +5,10 @@ import memory from "../img/memory.png";
 import { Link } from "react-router-dom";
 import tikatkimage from "../img/tiktak.jpeg";
 import "./main.css";
+import amitimage from '../img/amit-chauhan.jpg';
+import rahulgoel from '../img/rahulgoel.jpeg';
+import Chanderimage from '../img/Chander.jpeg';
+import rahulkumarimage from '../img/rahulkumar.jpeg'
 
 export const Main = () => {
   const imageClick = () => {
@@ -319,10 +323,10 @@ export const Main = () => {
             <div class="posts-comments-box">
               <h3>Top Comments</h3>
               <div class="comments-item">
-                <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_1.jpg" />
+                <img src={rahulgoel} />
                 <div>
                   <p>
-                    <span class="author">James Smith</span> <span>on</span>{" "}
+                    <span class="author">Rahul Goel </span> <span>on</span>{" "}
                     Lorem ipsum dolor sit amet consectectur.
                   </p>
                   <h5>June 21, 2019</h5>
@@ -330,10 +334,10 @@ export const Main = () => {
               </div>
 
               <div class="comments-item">
-                <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_2.jpg" />
+                <img src={amitimage} />
                 <div>
                   <p>
-                    <span class="author">James Smith</span> <span>on</span>{" "}
+                    <span class="author">Amit Chauhan</span> <span>on</span>{" "}
                     Lorem ipsum dolor sit amet consectectur.
                   </p>
                   <h5>June 21, 2019</h5>
@@ -341,10 +345,10 @@ export const Main = () => {
               </div>
 
               <div class="comments-item">
-                <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_3.jpg" />
+                <img src={Chanderimage} />
                 <div>
                   <p>
-                    <span class="author">James Smith</span> <span>on</span>{" "}
+                    <span class="author">Chander Kumar </span> <span>on</span>{" "}
                     Lorem ipsum dolor sit amet consectectur.
                   </p>
                   <h5>June 21, 2019</h5>
@@ -352,10 +356,10 @@ export const Main = () => {
               </div>
 
               <div class="comments-item">
-                <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_4.jpg" />
+                <img src={rahulkumarimage}/>
                 <div>
                   <p>
-                    <span class="author">James Smith</span> <span>on</span>{" "}
+                    <span class="author">Rahul Kumar</span> <span>on</span>{" "}
                     Lorem ipsum dolor sit amet consectectur.
                   </p>
                   <h5>June 21, 2019</h5>
@@ -369,10 +373,10 @@ export const Main = () => {
       <footer>
         <div class="flex">
           <small>
-            Copyright &copy; 2019 All rights reserved | This template is made
+            Copyright &copy; 2022 All rights reserved  | This template is made
             with <span class="footer-heart">&#9829;</span> by{" "}
-            <a href="https://colorlib.com" target="_blank">
-              Colorlib
+            <a href="https://truintenttechnologies.com/" target="_blank">
+            truintenttechnologies
             </a>
             .
           </small>
@@ -400,54 +404,10 @@ export const Main = () => {
         </div>
       </footer>
 
-      <div
-        id="carouselExampleIndicators"
-        className="carousel slide"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src={Ludo} alt="First slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src={Ludo} alt="Second slide" />
-          </div>
-          <div class="carousel-item">
-            {/* <div className='text-white'>Home</div> */}
-            <img class="d-block w-100" src={Ludo} alt="Third slide" />
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+    
 
       {/* card */}
-      <div class="container">
+      {/* <div class="container">
         <div class="row">
           <div class="col-sm">
             <div class="card" style={{ width: "18rem" }}>
@@ -507,10 +467,10 @@ export const Main = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* 2222 */}
-      <div class="container">
+      {/* <div class="container">
         <div class="row">
           <div class="col-sm">
             <div class="card" style={{ width: "18rem" }}>
@@ -558,7 +518,7 @@ export const Main = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
