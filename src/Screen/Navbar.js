@@ -3,7 +3,8 @@ import React,{useEffect} from 'react';
 import { Link } from 'react-router-dom';
 // import Titakapp from '../src/Tiktakapp'
 import Titakapp from '../Tiktakapp';
-import './main.css'
+import './main.css';
+import mainlogo from '../img/mainlogo.png'
 
 const Navbar = () => {
 
@@ -44,11 +45,15 @@ useEffect(() => {
       
         <div class="flex">
           <div class="logo">
-            <a href="#">
+            <a href="#" className='logotext'>
               <img
-                src="https://onclickwebdesign.com/wp-content/uploads/game_warrior_logo.png"
+              src={mainlogo}
+                // src="https://onclickwebdesign.com/wp-content/uploads/game_warrior_logo.png"
                 alt="Game Warrior Logo"
               />
+              Brain
+              <span className='worldcolor'>World</span>
+              Game
             </a>
           </div>
           <nav>
@@ -71,7 +76,7 @@ useEffect(() => {
                 <a href="#">Forums</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+              <Link to="/contact" class="nav-link">Contact</Link>  
               </li>
             </ul>
           </nav>

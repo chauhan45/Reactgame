@@ -9,6 +9,7 @@ import amitimage from '../img/amit-chauhan.jpg';
 import rahulgoel from '../img/rahulgoel.jpeg';
 import Chanderimage from '../img/Chander.jpeg';
 import rahulkumarimage from '../img/rahulkumar.jpeg'
+import mainlogo from '../img/mainlogo.png'
 
 export const Main = () => {
   const imageClick = () => {
@@ -279,7 +280,18 @@ export const Main = () => {
         <section id="posts-comments">
           <div class="flex">
             <div class="game-warrior">
-              <img src="https://onclickwebdesign.com/wp-content/uploads/footer_logo.png" />
+            <div class="logo">
+            <a href="#" className='logotext'>
+              <img
+              src={mainlogo}
+                // src="https://onclickwebdesign.com/wp-content/uploads/game_warrior_logo.png"
+                alt="Game Warrior Logo"
+              />
+              Brain
+              <span className='worldcolor'>World</span>
+              Game
+            </a>
+          </div>
               <p>
                 Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor
                 sit amet.
