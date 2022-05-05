@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 import Tiktokapp from "../Tiktakapp";
 import "../style.css";
 const Home = () => {
-
-
   return (
     <>
       <Navbar />

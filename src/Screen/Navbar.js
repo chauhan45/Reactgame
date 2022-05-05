@@ -78,6 +78,9 @@ useEffect(() => {
               <li>
               <Link to="/contact" class="nav-link">Contact</Link>  
               </li>
+              {/* <li>
+              <Link to="/snake" class="nav-link">snake</Link>  
+              </li> */}
             </ul>
           </nav>
           <a href="#" id="login-register-button">

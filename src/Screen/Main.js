@@ -8,8 +8,10 @@ import "./main.css";
 import amitimage from '../img/amit-chauhan.jpg';
 import rahulgoel from '../img/rahulgoel.jpeg';
 import Chanderimage from '../img/Chander.jpeg';
-import rahulkumarimage from '../img/rahulkumar.jpeg'
+import rahulkumarimage from '../img/rahulkumar.jpeg';
 import mainlogo from '../img/mainlogo.png'
+import game_image from '../img/game_image.png';
+
 
 export const Main = () => {
   const imageClick = () => {
@@ -20,6 +22,7 @@ export const Main = () => {
       <Navbar />
       <main>
         <section id="hero-image">
+          <img src={game_image} />
           <div class="hero-marketing-text">
             <h1>
               The Best <span>Games</span> Out There
@@ -36,20 +39,19 @@ export const Main = () => {
           </div>
         </section>
 
-        <section id="latest-news">
+        {/* <section id="latest-news">
           <div class="flex">
             <h5>Latest News</h5>
             <div id="latest-news-container">
               <div class="latest-news-item">
                 <span class="badge new">New</span>
                 <marquee class="latest-news-text">
-                  Comming Soon Lorem ipsum dolor sit amet, consectectur
-                  adipiscing elit ipsum.
+                To play the 20 questions texting game, one player must pick something from their imagination;
                 </marquee>
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section id="game-types-boxes">
           <div class="flex">
@@ -58,7 +60,7 @@ export const Main = () => {
               <span class="badge new">Comming Soon</span>
               <div class="contents">
                 <h4>Suspendisse ut justo tem por, rutrum</h4>
-                <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
+                <p>To play the 20 questions texting game, one player must pick something from their imagination;</p>
                 <a href="#" class="comments">
                   3 Comments
                 </a>
@@ -70,7 +72,7 @@ export const Main = () => {
               <span class="badge strategy">Comming Soon</span>
               <div class="contents">
                 <h4>Suspendisse ut justo tem por, rutrum</h4>
-                <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
+                <p>To play the 20 questions texting game, one player must pick something from their imagination;</p>
                 <a href="#" class="comments">
                   3 Comments
                 </a>
@@ -82,7 +84,7 @@ export const Main = () => {
               <span class="badge rpg">Comming Soon</span>
               <div class="contents">
                 <h4>Suspendisse ut justo tem por, rutrum</h4>
-                <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
+                <p>To play the 20 questions texting game, one player must pick something from their imagination;</p>
                 <a href="#" class="comments">
                   3 Comments
                 </a>
@@ -94,7 +96,7 @@ export const Main = () => {
               <span class="badge racing">Comming Soon</span>
               <div class="contents">
                 <h4>Suspendisse ut justo tem por, rutrum</h4>
-                <p>Lorem ipsum dolor sit amet, consectectur adipiscing elit.</p>
+                <p>To play the 20 questions texting game, one player must pick something from their imagination;</p>
                 <a href="#" class="comments">
                   3 Comments
                 </a>
@@ -112,8 +114,7 @@ export const Main = () => {
               <div class="box-lower-section">
                 <h4>Suspendisse ut justo tem por, rutrum</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectectur adipiscing elit lorem
-                  ipsum dolor sit amet.
+                  To play the 20 questions texting game, one player must pick something from their imagination;
                 </p>
                 <a href="#" class="comments">
                   3 Comments
@@ -127,8 +128,7 @@ export const Main = () => {
               <div class="box-lower-section">
                 <h4>Susce pulvinar metus nulla, vel facilisis sem</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectectur adipiscing elit lorem
-                  ipsum dolor sit amet.
+                  To play the 20 questions texting game, one player must pick something from their imagination;
                 </p>
                 <a href="#" class="comments">
                   3 Comments
@@ -142,8 +142,7 @@ export const Main = () => {
               <div class="box-lower-section">
                 <h4>Suspendisse ut justo tem por, rutrum</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectectur adipiscing elit lorem
-                  ipsum dolor sit amet.
+                  To play the 20 questions texting game, one player must pick something from their imagination;
                 </p>
                 <a href="#" class="comments">
                   3 Comments
@@ -227,8 +226,7 @@ export const Main = () => {
               <div>
                 <h4>Assasin's Creed</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectectur adipiscing ipsum
-                  dolor sit amet.
+                  Take a modern twist on this classic and fun school game. To play the Kiss, Marry, Kill, you will select three people
                 </p>
               </div>
             </div>
@@ -241,8 +239,7 @@ export const Main = () => {
               <div>
                 <h4>Doom</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectectur adipiscing ipsum
-                  dolor sit amet.
+                  Take a modern twist on this classic and fun school game. To play the Kiss, Marry, Kill, you will select three people
                 </p>
               </div>
             </div>
@@ -255,8 +252,7 @@ export const Main = () => {
               <div>
                 <h4>Overwatch</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectectur adipiscing ipsum
-                  dolor sit amet.
+                  Take a modern twist on this classic and fun school game. To play the Kiss, Marry, Kill, you will select three people
                 </p>
               </div>
             </div>
@@ -269,8 +265,7 @@ export const Main = () => {
               <div>
                 <h4>GTA</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectectur adipiscing ipsum
-                  dolor sit amet.
+                  Take a modern twist on this classic and fun school game. To play the Kiss, Marry, Kill, you will select three people
                 </p>
               </div>
             </div>
@@ -293,8 +288,7 @@ export const Main = () => {
             </a>
           </div>
               <p>
-                Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor
-                sit amet.
+              Take a modern twist on this classic and fun school game. To play the Kiss, Marry, Kill, you will select three people
               </p>
               <img
                 class="footer-graphic"
@@ -393,12 +387,12 @@ export const Main = () => {
             .
           </small>
           <ul>
-            <li>
-              <a href="#">Home</a>
+          <li>
+            <Link to="home" class="nav-link">Tik-Tac-ToE </Link>  
             </li>
 
             <li>
-              <a href="#">Games</a>
+            <Link to="app" class="nav-link">Memory Game</Link>  
             </li>
 
             <li>
@@ -410,7 +404,7 @@ export const Main = () => {
             </li>
 
             <li>
-              <a href="#">Contact</a>
+            <Link to="/contact" class="nav-link">Contact</Link>  
             </li>
           </ul>
         </div>

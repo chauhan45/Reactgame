@@ -1,6 +1,7 @@
 import React from "react";
 import './contact.css';
 import Navbar from "./Navbar";
+import { Link } from 'react-router-dom';
 
 function Contact() {
   return (
@@ -129,11 +130,11 @@ function Contact() {
           </small>
           <ul>
             <li>
-              <a href="#">Home</a>
+            <Link to="home" class="nav-link">Tik-Tac-ToE </Link>  
             </li>
 
             <li>
-              <a href="#">Games</a>
+            <Link to="app" class="nav-link">Memory Game</Link>  
             </li>
 
             <li>
@@ -145,7 +146,7 @@ function Contact() {
             </li>
 
             <li>
-              <a href="#">Contact</a>
+            <Link to="/contact" class="nav-link">Contact</Link>  
             </li>
           </ul>
         </div>
