@@ -10,7 +10,6 @@ import rahulgoel from '../img/rahulgoel.jpeg';
 import Chanderimage from '../img/Chander.jpeg';
 import rahulkumarimage from '../img/rahulkumar.jpeg';
 import mainlogo from '../img/mainlogo.png'
-import game_image from '../img/game_image.png';
 
 
 export const Main = () => {
@@ -22,7 +21,6 @@ export const Main = () => {
       <Navbar />
       <main>
         <section id="hero-image">
-          <img src={game_image} />
           <div class="hero-marketing-text">
             <h1>
               The Best <span>Games</span> Out There
