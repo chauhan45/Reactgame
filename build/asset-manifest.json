@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/reactjs-memory-game/static/css/main.e7c5d977.css",
+    "main.js": "/reactjs-memory-game/static/js/main.366bfb2b.js",
+    "static/media/game_image.png": "/reactjs-memory-game/static/media/game_image.a7e4aebb6870f4469370.png",
+    "static/media/rahulgoel.jpeg": "/reactjs-memory-game/static/media/rahulgoel.42cd99ba654ae7eb84f2.jpeg",
+    "static/media/ludo.jpeg": "/reactjs-memory-game/static/media/ludo.67818f0c428e4b9898cf.jpeg",
+    "static/media/Chander.jpeg": "/reactjs-memory-game/static/media/Chander.be9daf656267863aa45b.jpeg",
+    "static/media/amit-chauhan.jpg": "/reactjs-memory-game/static/media/amit-chauhan.c6c962d28c90eff4fd20.jpg",
+    "static/media/rahulkumar.jpeg": "/reactjs-memory-game/static/media/rahulkumar.72466844a405290cb30d.jpeg",
+    "static/media/memory.png": "/reactjs-memory-game/static/media/memory.b3e22474c4d0f4a4b0c2.png",
+    "static/media/tiktak.jpeg": "/reactjs-memory-game/static/media/tiktak.5763052421cf9a4a9210.jpeg",
+    "index.html": "/reactjs-memory-game/index.html",
+    "main.e7c5d977.css.map": "/reactjs-memory-game/static/css/main.e7c5d977.css.map",
+    "main.366bfb2b.js.map": "/reactjs-memory-game/static/js/main.366bfb2b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7c5d977.css",
+    "static/js/main.366bfb2b.js"
+  ]
+}
