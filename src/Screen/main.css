@@ -150,8 +150,8 @@ nav ul li a:hover {
 #login-register-button {
   background-color: #ffb320;
   color: #131313;
-  border-radius: 20px;
-  padding: 16px 13px;
+  border-radius: 10px;
+  padding: 5px 5px;
   font-size: 0.85em;
   font-weight: 600;
 }

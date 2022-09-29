@@ -6,6 +6,7 @@ import Navbar from "./Screen/Navbar";
 import "./style.css";
 import Titakapp from "../src/Tiktakapp";
 import { Main } from "./Screen/Main";
+import { Auth0Provider } from "@auth0/auth0-react";
 import {
   BrowserRouter as Router,
   Route,
@@ -91,6 +92,7 @@ class App extends Component {
     const { cards, newGame, won, clicks } = this.state;
     return (
       <div>
+    
         <Navbar />
         <div className="board-container">
           {newGame ? (
@@ -117,6 +119,7 @@ class App extends Component {
             </Switch>
           </div>
         </Router>
+       
       </div>
     );
   }

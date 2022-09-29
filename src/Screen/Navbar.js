@@ -1,58 +1,44 @@
-import React,{useEffect} from 'react';
-// import {Link, Button, Nav, NavDropdown, MenuItem, NavItem } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-// import Titakapp from '../src/Tiktakapp'
-import Titakapp from '../Tiktakapp';
-import './main.css';
-import mainlogo from '../img/mainlogo.png'
-
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Titakapp from "../Tiktakapp";
+import "./main.css";
+import mainlogo from "../img/mainlogo.png";
+import { Button, Modal } from "react-bootstrap";
+import AddForm from "./AddForm";
+import CloseButton from "react-bootstrap/CloseButton";
+import { useAuth0 } from "@auth0/auth0-react";
+import { Auth0Provider } from "@auth0/auth0-react";
 const Navbar = () => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const { loginWithRedirect, logout, user, isAuthenticated, isLoading } =
+    useAuth0();
 
-useEffect(() => {
-  document.getElementById('nav-toggle').addEventListener('click', function () {
-    let navMenu = document.getElementById('nav-menu-container');
-    navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
-});
-});
+    
+  useEffect(() => {
+    document
+      .getElementById("nav-toggle")
+      .addEventListener("click", function () {
+        let navMenu = document.getElementById("nav-menu-container");
+        navMenu.style.display =
+          navMenu.offsetParent === null ? "block" : "none";
+      });
+  });
 
   return (
     <>
-    
-    {/* <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">AMITGAME</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-      <Link to="home" class="nav-link">Tik-tak game</Link>       </li>
-      <li class="nav-item">    
-        <Link to="app" class="nav-link">Memory Game</Link>  
-      </li>
-      <li class="nav-item">
-        <Link to="Titakapp" class="nav-link"> </Link>  
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav> */}
-    
-
-    <header>
-      
+      <header>
         <div class="flex">
           <div class="logo">
-            <a href="#" className='logotext'>
+            <a href="#" className="logotext">
               <img
-              src={mainlogo}
+                src={mainlogo}
                 // src="https://onclickwebdesign.com/wp-content/uploads/game_warrior_logo.png"
                 alt="Game Warrior Logo"
               />
               Brain
-              <span className='worldcolor'>World</span>
+              <span className="worldcolor">World</span>
               Game
             </a>
           </div>
@@ -67,31 +53,77 @@ useEffect(() => {
                 <a href="#">Home</a>
               </li>
               <li>
-              <Link to="home" class="nav-link">Tik-Tac-ToE </Link>  
+                <Link to="home" class="nav-link">
+                  Tik-Tac-ToE{" "}
+                </Link>
               </li>
               <li>
-              <Link to="app" class="nav-link">Memory Game</Link>  
+                <Link to="app" class="nav-link">
+                  Memory Game
+                </Link>
               </li>
               <li>
                 <a href="#">Forums</a>
               </li>
               <li>
-              <Link to="/contact" class="nav-link">Contact</Link>  
+                <Link to="/contact" class="nav-link">
+                  Contact
+                </Link>
               </li>
-              {/* <li>
-              <Link to="/snake" class="nav-link">snake</Link>  
-              </li> */}
+              <li>
+                {
+                  isAuthenticated && <div><li style={{color:'white'}}>{user.name} </li>
+                  <img src={user.picture} alt={user.name} style={{height:'40px'
+                  ,borderRadius:'50%'
+                  }}/>
+                  </div>
+                }
+              </li>
+              {isAuthenticated ? (
+                <li>
+                  <button id="login-register-button"
+                    onClick={() => logout({ returnTo: window.location.origin })}
+                  >
+                    Log Out
+                  </button>
+                </li>
+                
+              ) : (
+                <li>
+                  <button onClick={() => loginWithRedirect()} id="login-register-button">Log In</button>
+                </li>
+              )}
+
             </ul>
           </nav>
-          <a href="#" id="login-register-button">
-            Login / Register
-          </a>
+          {/* <button id="login-register-button" onClick={handleShow}>
+            Login
+          </button> */}
         </div>
       </header>
-
-
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header>
+          <Modal.Title>Login</Modal.Title>
+          <Button
+            variant="secondary"
+            onClick={handleClose}
+            className="fa fa-close"
+          ></Button>
+        </Modal.Header>
+        <Modal.Body>
+          <AddForm />
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

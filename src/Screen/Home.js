@@ -8,8 +8,8 @@ import "../style.css";
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <Tiktokapp />
+        <Navbar />
+        <Tiktokapp />
     </>
   );
 };

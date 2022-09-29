@@ -1,6 +1,8 @@
 import React from "react";
 import TicTacToe from "./tiktak/tictactoe-v2";
 import TicTacToeAI from "./tiktak//tictactoe-v3";
+import { Auth0Provider } from "@auth0/auth0-react";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -24,6 +26,7 @@ function Menu() {
 
 function App() {
   return (
+  
     <Router basename={process.env.PUBLIC_URL}>
       <div className="container">
         <Menu />
