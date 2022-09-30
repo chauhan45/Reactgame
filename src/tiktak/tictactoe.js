@@ -120,7 +120,7 @@ class TicTacToe extends Component {
         )}
         {gameStatus === GameStatus.End && (
           <div className="panel">
-            <div>{winner ? `Winner: ${winner}` : "Draw"}`}</div>
+            <div>{winner ? `Winner: ${winner}` : "Draw"}`</div>
             <div className="start-btn" onClick={this.start}>
               Start Over
             </div>
